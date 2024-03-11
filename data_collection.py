@@ -16,6 +16,10 @@
 # 42059 - page: https://www.ndbc.noaa.gov/station_page.php?station=42059
 # 42060 - page: https://www.ndbc.noaa.gov/station_page.php?station=42060
 
+# we will be focused on NDBC buoys:
+# - 41010, 41043, 41046, 41047 in the Atlantic Ocean
+# - 42056, 42057, 42058*, 42059, and 42060 in the Caribbean Sea. 
+
 # we will use the following libraries
 import pandas as pd
 import numpy as np
@@ -116,7 +120,7 @@ for station in stations:
 
 
 # TODO: based on my short coversation with Brandon on 2021-07-14, we need to do the following:
-# Get the time data from the link shared and convert it into the format you will share (for 2020, 2021, 2022)
+# Get the time data from the link shared and convert it into the format he will share (for 2020, 2021, 2022)
 # Get the spectral data from 2010 to 2022 (for now). ask Vabhav to give us a sample of spectral data, he needs.
     # if the spectral data from NBDC can be used, then we can use it. Otherwise, we need to generate that data
     # from the time data.
